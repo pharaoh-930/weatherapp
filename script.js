@@ -19,7 +19,7 @@ async function getWeatherData(event) {
     }
 
     fetch(
-        `http://api.weatherapi.com/v1/current.json?key=38e743a9e993452e8ac130951242012&q=${cityInput}&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=38e743a9e993452e8ac130951242012&q=${cityInput}&aqi=no`
     )
         .then((response) => response.json())
         .then((data) => {
