@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather KiK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar for broad screens -->
+    <nav id="Navbar-1" class="broad">
+
+        <!-- Navbar logo -->
+        <label class="logo-1">WeatherKiK</label>
+
+        <!-- Searchbar -->
+        <div id="searchbar-1">
+            <input type="text" 
+                   placeholder="Your city ?"
+                   spellcheck="false">
+                   <button id="weatherclick">Q</button>
+        </div>
+
+        <!-- Menu -->
+        
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        
+
+
+    </nav>
+
+
+ <!-- Navbar for small screens -->
+   <nav id="Navbar-2" class="small">
+
+        <!-- Navbar logo -->
+        <label class="logo-2">WeatherKiK</label>
+
+        <!-- Menu Options -->
+        
+        <!-- Hamburger -->
+        <div id="Ham-menu">
+            <img src="ham-menu.png"
+                 alt="Menu - click for more options like searching the city"
+                 class="ham-icon"
+                 onclick="toggleMenu()">
+        </div>
+
+        <!-- Collapsible Menu -->
+        <div id="menu-container" class="Menu hidden">
+
+            <!-- Searchbar -->
+           <div id="searchbar-2">
+                <input type="text" placeholder="Your city?" spellcheck="false">
+                <button id="weatherclick2" class="ask">Q</button>
+            </div>
+
+             <!-- Menu Items -->
+            
+            <ul>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        
+        </div>
+    </nav>
+
+
+   <!-- About Section -->
+<section id="about-section">
+    <h2>About WeatherKiK</h2>
+    <p>
+        WeatherKiK provides real-time weather information for any city worldwide. 
+        Enter a city name, and let us fetch accurate data, including temperature, 
+        wind speed, and more!
+    </p>
+</section>
+
+<!-- Weather Information Section -->
+<section id="weather-info-section" class="hidden">
+    <div id="weather-container">
+        <h2 id="weather-city">City Name</h2>
+        <p id="weather-date">Date</p>
+        <img id="weather-icon" alt="Weather Icon" />
+        <p id="weather-description">Weather Description</p>
+        <p id="weather-humidity">Humidity: <span id="humidity-value"></span>%</p>
+        <p id="weather-wind-speed">Wind Speed: <span id="wind-speed-value"></span> km/h</p>
+    </div>
+</section>
+ 
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-content">
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/pharaoh_1173" target="_blank" class="social-link">
+                <i class="fab fa-instagram icon" id="ig"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/b-vritant" target="_blank" class="social-link">
+                <i class="fab fa-linkedin icon" id="lin"></i>
+            </a>
+        </div>
+
+        <!-- My message -->
+        <p class="message">Made by Pharaoh</p>
+    </div>
+</footer>
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+
+#Navbar-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0077cc; 
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.logo-1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+#searchbar-1 {
+    display: flex;
+    flex-grow: 1;
+    width: 10%;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+#searchbar-1 input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+#Navbar-1 ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#Navbar-1 ul li {
+    cursor: pointer;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+#Navbar-1 ul li:hover {
+    color: #ffcc00; 
+}
+
+/* Style for Mobile Navbar */
+#Navbar-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.logo-2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#Ham-menu {
+    cursor: pointer;
+    
+}
+
+.ham-icon {
+    width: 40px;
+    height: 40px;
+}
+
+#footer {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: white; 
+    font-size: 30px; 
+    transition: transform 0.3s, color 0.3s;
+}
+
+#lin:hover {
+    color: blue; 
+}
+
+#ig:hover {
+    color: purple; 
+}
+
+.icon:hover {
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}
+
+.message {
+    font-size: 1em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#menu-container {
+    background-color: #0077cc; 
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    transition: max-height 0.3s ease;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.Menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.Menu li {
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+.Menu li:hover {
+    background-color: #005fa3;
+}
+
+
+#searchbar-2 {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 90px;
+}
+
+#searchbar-2 input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#searchbar-2 button {
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-color: #ccc;
+}
+
+#searchbar-1 button {
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-color: #ccc;
+    
+}
+
+
+
+
+
+
+/* About Section */
+#about-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+}
+
+#about-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#about-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Weather Information Section */
+#weather-info-section {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 8px;
+    display: none; 
+}
+
+#weather-info-section h2 {
+    font-size: 24px;
+}
+
+#weather-info-section p, #weather-info-section img {
+    margin: 5px 0;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+
+#Navbar-2 {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    #Navbar-1 {
+        display: none; 
+    }
+
+    #Navbar-2 {
+        display: flex; 
+    }
+}
